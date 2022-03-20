@@ -2,13 +2,11 @@ class Pared:
     #Constructor
     def __init__(self, orientacion):
         self.orientacion = orientacion
-        print (self.orientacion)
-
+        
 class Ventana(Pared):
     #Constructor
-    def __init__(self, ventana, superficie):
-        super.__init__()
-        self.ventana = ventana
+    def __init__(self, orientacion, superficie):
+        super().__init__(orientacion)
         self.superficie = superficie
     
     def get_area(self):
@@ -16,8 +14,8 @@ class Ventana(Pared):
 
 class Casa(Ventana):
     #Constructor
-    def __init__(self, paredes):
-        super.__init__()
+    def __init__(self, paredes, orientacion, superficie):
+        super().__init__(orientacion, superficie)
         self.paredes = paredes
     
     def superficie_acristalada(self):
