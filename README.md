@@ -3,6 +3,8 @@
 # EJERCICIO1
 Definir una clase Punto2D que tenga dos atributos x e y, y que implemente un método de traslacion() que reciba como parámetro las dos componentes horizontal y vertical de la traslación, y modifique las coordenadas del punto en cuestión según el principio de que una traslación (a, b) consiste en sumar a (respectivamente b), al componente x (respectivamente y) de un punto.
 
+### SOLUCIÓN
+
     class Punto2D:
         def __init__(self, x, y):
             self.x = x
@@ -26,6 +28,8 @@ Definir una clase Punto2D que tenga dos atributos x e y, y que implemente un mé
 
 # EJERCICIO 2
 ¿Qué muestra este programa en la salida estándar?
+
+### SOLUCIÓN
 
 ```#Define la clase padre
 class Base: 
@@ -67,6 +71,8 @@ class Derivada(Base):
 # EJERCICIO 3
 En el caso del temido diamante de la herencia múltiple (ver capítulo Conceptos de la POO, sección Herencia múltiple), donde una clase D hereda de dos clases B y C, ambas heredando de una sola clase A, escriba el código que permita, durante la instanciación, inicializar los atributos a, b y c, pertenecientes respectivamente a las clases A, B y C.
 
+### SOLUCIÓN
+
 ```class A:
     def __init__(self,a):
         self.a = a
@@ -91,6 +97,8 @@ class D(B, C):
 
 # EJERCICIO 4
 Implementar un programa que calcule la superficie total acristalada de una casa, sabiendo que una casa está formada por paredes y que cada pared tiene una orientación (Norte, Oeste, Sur, Este) y posiblemente ventanas. Una ventana tiene una superficie que se da como parámetro durante su construcción.
+
+### SOLUCIÓN
 
 ```class Pared:
     #Constructor
