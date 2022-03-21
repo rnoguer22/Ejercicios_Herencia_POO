@@ -24,6 +24,40 @@
 <img width="233" alt="2022-03-20 (2)" src="https://user-images.githubusercontent.com/91720991/159174187-b7d7d416-4c28-4c0b-a9e5-46cc0836625f.png">
 
 # EJERCICIO 2
+```#Define la clase padre
+class Base: 
+    #Define el constructor
+    def __init__(self): 
+        #Los atributos de la clase
+        self.a = "a" 
+        self.b = "b" 
+        self.c = "c" 
+    #Define los métodos de la clase
+    def A(self): 
+        print(self.a) #Imprime por pantalla el valor correspondiente a self.a
+ 
+    def B(self): 
+        print(self.b) #Imprime por pantalla el valor correspondiente a self.b
+ 
+    def C(self): 
+        print(self.c) #Imprime por pantalla el valor correspondiente a self.c
+
+#Define la clase hijo 
+class Derivada(Base): 
+    #Define el constructor
+    def __init__(self): 
+        self.a = "aa" #Al definir este atributo antes de la herencia del método siguiente no tiene ningun efecto
+        super().__init__() #Hereda el metodo __init__ de la clase padre
+        self.c = "cc" #Cambia el atributo self.c del método heredado
+ 
+    def A(self): 
+        print(self.a) #Imprime por pantalla el valor de self.b
+ 
+    def B(self): 
+        self.b = "bb" #Cambia el atributo self.b definido en el constructor 
+        super().B() #Hereda el método B de la clase padre 
+        print(self.b) #Imprime por pantalla el valor de self.b
+```
 
 ![UML puzzle](https://user-images.githubusercontent.com/91722847/159286685-764df47a-a49b-46e4-a3df-a9e798f2c8ff.png)
 
