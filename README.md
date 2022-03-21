@@ -1,5 +1,7 @@
 # Ejercicios_Herencia_POO
 
+DIRECCIÓN DE GITHUB: https://github.com/rnoguer22/Ejercicios_Herencia_POO.git
+
 # EJERCICIO1
 Definir una clase Punto2D que tenga dos atributos x e y, y que implemente un método de traslacion() que reciba como parámetro las dos componentes horizontal y vertical de la traslación, y modifique las coordenadas del punto en cuestión según el principio de que una traslación (a, b) consiste en sumar a (respectivamente b), al componente x (respectivamente y) de un punto.
 
